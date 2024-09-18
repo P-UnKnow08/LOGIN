@@ -9,7 +9,7 @@ export const connectDB = async () => {
     // Leer la URI de conexión desde las variables de entorno
     const dbURI =
       process.env.MONGODB_URI ||
-      "mongodb+srv://myAtlasDBUser:Miguel123456**@myatlasclusteredu.tka8uwj.mongodb.net/"; // URI por defecto para desarrollo local
+      "mongodb+srv://myAtlasDBUser:Miguel123456**@myatlasclusteredu.tka8uwj.mongodb.net/database"; // URI por defecto para desarrollo local
 
     // Conectar a la base de datos con opciones recomendadas para Mongoose
     await mongoose.connect(dbURI, {});
